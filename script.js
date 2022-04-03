@@ -22,7 +22,7 @@ $(function() {
          href: "#",
          "data-btn-num": i
        });
-         // appends history as a button below the search field
+         // appends history 
          cityListButton.text(searchHistory[i]);
          $(".list-group").append(cityListButton);      
      }
