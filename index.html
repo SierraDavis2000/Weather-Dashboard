@@ -15,9 +15,9 @@
         <h1>Weather Dashboard</h1>
     </header>
     <main>
-        <div class ="container">
+        <div class ="container-fluid">
             <div class="row">
-                <!--Search imput-->
+                <!--Search input-->
                 <div>
                     <h2 class = "form-title">Enter a City Name:</h2>
                     <div class="input-group mb-3">
@@ -28,16 +28,32 @@
                             </button>
                         </div>
                     </div>
+                    <!--Search Results-->
+                    <div class="list-group"><a class="list-group-item list-group-item-action" href="#" data-btn-num="1"></a></div>
+                    <div class=" col-md-8">
+                        <div class="row p-2">
+                            <div class="card">
+                                <!-- Current Weather Card -->
+                                <div class="card-body"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4>5-Day Forecast:</h4>
+                        </div>
+                        <!-- Five Day Card -->
+                        <div id="weeklyForecast" class="row"></div>
+                    </div>
                 </div>
             </div>
         </div>
         
-        </div>"
+        </div>
     </main>
     <script src="https://kit.fontawesome.com/1cc5977b2c.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   
     <script src="script.js"></script>
 </body>
 </html>
