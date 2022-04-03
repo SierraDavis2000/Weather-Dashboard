@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 $(function() { 
     var locaton =  getLocation();
   });
@@ -160,22 +159,6 @@ $(function() {
  
  getItems();
  
- function getLocation() {
-     if (navigator.geolocation) {
-       navigator.geolocation.getCurrentPosition(showPosition);
-     } else { 
-       console.log("Geolocation is not supported by this browser.");
-     }
-   }
+
    
- function showPosition(position) {
-     fetch("https://geolocation-db.com/json/697de680-a737-11ea-9820-af05f4014d91")
-         .then(function(response){
-             return response.json();
-         })
-         .then(function(response){
-             getData(response.city);
-             $("#city").val(response.city);
-             saveNewCity(response.city);
-         });
- }
+ 
